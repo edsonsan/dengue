@@ -5,16 +5,15 @@
 /*VARIAVEIS GLOBAIS DE CORES SEGUINDO A PALETA DE CORES*/
 
 :root{
---dark-primary-color: background: #0097A7; 
---default-primary-color: background: #00BCD4; 
---light-primary-color: background: #B2EBF2; 
---text-primary-color: color: #FFFFFF; 
---accent-color: background: #536DFE; 
---primary-text-color: color: #212121; 
---secondary-text-color: color: #757575; 
---divider-color: border-color: #BDBDBD; 
+--dark-primary-color:#0097A7; 
+--default-primary-color:#00BCD4; 
+--light-primary-color:#B2EBF2; 
+--text-primary-color: #FFFFFF; 
+--accent-color: #536DFE; 
+--primary-text-color: #212121; 
+--secondary-text-color: #757575; 
+--divider-color: #BDBDBD; 
 }
-
 
 html,
 body {
@@ -22,3 +21,51 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Baloo Bhai 2', cursive;
 }
 
+.div-background{
+    background-image:url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+.div-formulario{
+    background-color: var(--secondary-text-color);
+}
+
+.div-formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 20% 20% 0 20%  ;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+    max-width: 50%;
+    width: 50%;
+
+}
+
+.titulo{
+    color: var(--text-primary-color);
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.label{
+    color: var(--text-primary-color);
+}
+
+.btn-cadastrar{
+    color: var(--secondary-text-color);
+    background-color: var(--light-primary-color);
+    margin-top: 7%;
+}
+
+.link-esqueci-senha{
+    color:var(--text-primary-color);
+    text-align: center;
+    margin-top: 10%;
+}
