@@ -13,6 +13,7 @@
 --primary-text-color: #212121; 
 --secondary-text-color: #757575; 
 --divider-color: #BDBDBD; 
+--divider-color-light: #DFDFDF; 
 }
 
 html,
@@ -43,7 +44,6 @@ font-family: 'Baloo Bhai 2', cursive;
     align-self: center;
     max-width: 50%;
     width: 50%;
-
 }
 
 .titulo{
@@ -51,7 +51,6 @@ font-family: 'Baloo Bhai 2', cursive;
     font-size: large;
     text-transform: uppercase;
     text-align: center;
-
 }
 
 .label{
@@ -68,4 +67,138 @@ font-family: 'Baloo Bhai 2', cursive;
     color:var(--text-primary-color);
     text-align: center;
     margin-top: 10%;
+}
+
+.link-esqueci-senha:hover{
+    color:var(--light-primary-color);
+    text-decoration:none;
+}
+
+/* Aqui inica o estilo da página User */
+.body-home{
+    background-color: var(--divider-color-light);
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header, .header-user{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    height: 10vh;
+    margin-bottom: 0.5vh;
+    background-color: var(--text-primary-color) ;
+    color: var(--dark-primary-color);
+}
+
+.header-use{ 
+    justify-content: space-between;
+}
+
+.header-user-img{
+    font-size: 2.5em;
+    margin: 1.5%;
+}
+
+.user-name{
+    flex-grow: 1;
+}
+
+.header-sair {
+    margin: 2vw;
+    font-size: 1.5em;
+}
+
+.nav-filtro{
+    background-color: var(--text-primary-color);
+    display: flex;
+    align-items: baseline;
+    justify-content:space-around ;
+    margin-bottom: 1vh;
+    position: fixed;
+    top: 10.4vh;
+    z-index: 1;
+    width: 100vh;
+    min-width: 100vw;
+    overflow: auto;
+}
+
+.nav-check{
+    display: flex;
+    align-items: center;
+}
+
+.nav-data{
+    display: flex;
+    align-items: center;
+}
+
+.nav-data label{
+    padding: 0 0.4vw;
+}
+
+.btn-buscar{
+    margin-left: 1vw;
+}
+
+.nav-nova-ocorrencia{
+    margin-top: 1vh;
+}
+
+.fa-plus{
+    margin-left: 1em;
+    vertical-align: middle;
+}
+
+.main{
+    position: fixed;
+    top: 18.5vh;
+    overflow-y: scroll;
+    height: 73vh;
+}
+
+.main-ul, .main-ul-item{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-img-top{
+    padding: 1vh;
+    width: 100%;
+}
+
+.card{
+    width: 13.5rem;
+    margin-left: 1.2vh;
+    margin-top: 1.5vh;
+}
+
+.btn-status{
+    width: 100%;
+}
+
+.maiuscula{
+    text-transform: uppercase;
+}
+.txtplus{
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--text-primary-color);
+    padding: 2vh 0 0 2vh;
+    color: var(--secondary-text-color);
 }
