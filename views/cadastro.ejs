@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+  
+    <!-- Metas para robos de pesquisa-->
     <meta name="description" content="Site para denúncias dos focos da Dengue">
     <meta name="keywords" content="Dengue, foco">
     <meta name="author" content="Edson Santos">
-    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    
+    <!-- Imports das folhas de estilos-->
     <link rel="stylesheet" href="/stylesheets/normalize.css"/>
     <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
     <link rel='stylesheet' href="/stylesheets/style.css"/>
     <title><%=title%></title>
   </head>
+
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8 div-background"></div>
-        <div class="col-sm-4 div-formulario">
-          <form>
-            <a href="/" class="logo"><img src="/images/logo-branco.png" alt="Logo Branco Zica" /></a>
-            <h1 class="titulo">Entar</h1>
+            <div class="col-sm-4 div-formulario">
+              <form>      
+            <a href="/"><img src="/images/logo-branco.png" alt="Logo Branco Zica" class="logocad"></a>
+            <p></p>
+            <h1 class="titulo">Cadastrar</h1>
+            <p></p>
             <div class="form-group">
               <label for="email" class="label">Endereço de Email</label>
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -28,11 +36,12 @@
               <label for="senha" class="label">Senha</label>
               <input type="password" class="form-control" id="senha">
             </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="button" class="btn btn-cadastrar" onclick="location.href='/cadastro'">Cadastrar</button>
         </div>
       </div>
     </div>
     <script src="/javascripts/jquery-3.4.1.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
   </body>
+  
 </html>
