@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Site para denúncias dos focos da Dengue">
+    <meta name="keywords" content="Dengue, foco">
+    <meta name="author" content="Edson Santos">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/normalize.css"/>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+    <link rel='stylesheet' href="/stylesheets/style.css"/>    
+    <link rel='stylesheet' 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <title><%=title%></title>
+  </head>
+ 
+  <body class="body-home">
+    <header class="header">
+        <div class="header-user">
+            <div class='header-user-img'>
+                <i class="fa fa-user"></i>
+            </div>
+            <div class='user-name'>
+                <h2>usuarios</h2>
+            </div>
+            <div class='header-sair'>
+                <a href="/" >
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </div>     
+    </header>
+
+    <main class="main-denuncia-selecionada">
+
+        <section class="sessao-denuncia-selecionada">
+
+                <div class="imagem-denuncia-selecionada">
+                    <div class="icone-camera-denuncia-selecionada">
+                        <i class="fa fa-image"></i>
+                    </div>
+                    <div class="foto-denuncia-selecionada">    
+                        <img src="" alt="imagem do local">
+                    </div>
+                </div>
+
+                <div class="form-group em-linha">                
+                    <label for="endereco">Endereço</label>
+                    <textarea name="endereco" id="enderco" rows="3" readonly>Rua Vai quem quer, 50</textarea>
+                </div>
+                <div class="form-group em-linha">                
+                    <label for="cidade" class="cidade"> Cidade-UF</label>
+                    <input type="text" name="cidade" id="cidade" value="São Paulo - SP" readonly>
+                </div>
+                <a href="/users" class="btn-voltar-denuncia-selecionada">
+                    <i class="fa fa-chevron-left"></i>
+                   <span class="textos-denuncia-selecionada"> Voltar</span>
+                </a>                
+
+        </section>
+                                                                                                                                                  
+    </main>
+
+    <footer class="footer maiuscula">
+        <address>
+            Uma iniciativa do ministério da saúde 2020.
+        </address>
+    </footer>
+     
+    <script src="/javascripts/jquery-3.4.1.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+                                       
+</html>                               
